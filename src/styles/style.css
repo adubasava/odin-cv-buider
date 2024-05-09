@@ -1,0 +1,161 @@
+﻿body {
+  background-color: rgba(0, 255, 255, 0.112);
+  margin: 0;
+  padding: 20px;
+  font-family: 'Teachers', sans-serif;
+}
+
+#cv-container,
+#sidebar div {
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: 2px 2px 2px 1px gray;
+  font-size: 24px;
+}
+
+#sidebar div {
+  padding: 10px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+#cv-container {
+  width: 60%;
+  padding: 20px;
+}
+
+#fname {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(3, 164, 164, 0.943);
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.phone,
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+input {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  background-color: rgba(0, 255, 255, 0.112);
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 3px;
+  width: 95%;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.up {
+  transform: rotate(180deg);
+}
+
+main {
+  display: flex;
+  gap: 30px;
+}
+
+.title {
+  background-color: rgba(3, 164, 164, 0.943);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.firstRow,
+.secondRow {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.firstRow {
+  margin-top: 20px;
+}
+
+.secondRow {
+  margin-bottom: 20px;
+}
+
+.school,
+.company {
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  font-size: 20px;
+}
+
+button {
+  border: 1px solid white;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px 0.5px rgba(3, 164, 164, 0.943);
+}
+
+button:hover,
+button:focus {
+  border: 1px solid rgba(3, 164, 164, 0.943);
+  box-shadow: none;
+  background-color: rgba(0, 255, 255, 0.112);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+}
+
+.options {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.print {
+  background-color: white;
+}
+
+@media print {
+  #header,
+  #sidebar {
+    display: none !important;
+  }
+
+  #cv-container {
+    width: 620px;
+    box-shadow: none;
+  }
+}
